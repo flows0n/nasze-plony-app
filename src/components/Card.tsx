@@ -1,13 +1,9 @@
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
+import { IDetails } from '../views/DetailsView';
 
 type CardProps = {
-  id: number;
-  logo: string;
-  place: string;
-  person?: string;
-  description: string;
-  children?: React.ReactNode;
+  details: IDetails;
 };
 
 const StyledCard = styled.div`
@@ -25,6 +21,7 @@ const StyledCard = styled.div`
   align-content: start;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 
   transition: 0.2s linear;
   :hover {
@@ -37,23 +34,22 @@ const StyledCard = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 100px;
-  margin: 4px 0 8px 0;
+  max-width: 100px;
+  margin: 16px;
 `;
 
-const Card = (props: CardProps) => {
+const Card = ({ details }: CardProps) => {
   const navigate = useNavigate();
 
   const handleClick = (): void => {
-    console.log(props.id);
-    navigate(`/:${props.id}`);
+    navigate(`/:${details.id}`, { state: details });
   };
 
   return (
     <StyledCard onClick={handleClick}>
-      <Logo src={props.logo} />
-      <h1>{props.place}</h1>
-      <p>{props.person}</p>
+      <Logo src={details.logo} />
+      <h1>{details.place}</h1>
+      <p>{details.person}</p>
     </StyledCard>
   );
 };

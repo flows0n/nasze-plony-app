@@ -5,16 +5,13 @@ type CardsContainerProps = {
   children?: React.ReactNode;
 };
 
-type StyledContainerProps = {
-  isVisible?: boolean;
-};
-
-const StyledContainer = styled.div<StyledContainerProps>`
+const StyledContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 85%;
+  gap: 20px;
 `;
 
 const CardsContainer = ({ children }: CardsContainerProps) => {

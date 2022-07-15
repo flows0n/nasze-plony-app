@@ -3,14 +3,17 @@ import Navbar from './components/Navbar';
 import styled from 'styled-components';
 import MainView from './views/MainView';
 import { Routes, Route } from 'react-router-dom';
-import CardDetails from './views/CardDetails';
+import DetailsView from './views/DetailsView';
+import Footer from './components/Footer';
 
 const StyledApp = styled.div`
   background: url('resources/field.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 800px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `;
 const Body = styled.div`
   display: flex;
@@ -25,9 +28,10 @@ const App = () => {
       <Body>
         <Routes>
           <Route path="/" element={<MainView />} />
-          <Route path=":id" element={<CardDetails />} />
+          <Route path=":id" element={<DetailsView />} />
         </Routes>
       </Body>
+      <Footer />
     </StyledApp>
   );
 };
