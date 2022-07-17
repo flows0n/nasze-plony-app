@@ -81,8 +81,8 @@ const Link = styled.a`
   gap: 10px;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 8px 16px;
+  border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   font-size: 18px;
   background-color: rgba(255, 255, 255, 1);
@@ -117,8 +117,14 @@ const DetailsView = () => {
           <FiMail /> {details.email}
         </Link>
       </LinksSection>
-      <SubTitle>{photoGallery}</SubTitle>
-      <PhotoCarousel photos={details.photos} />
+      {details.photos.length ? (
+        <>
+          <SubTitle>{photoGallery}</SubTitle>
+          <PhotoCarousel photos={details.photos} />
+        </>
+      ) : (
+        <></>
+      )}
     </StyledContainer>
   );
 };

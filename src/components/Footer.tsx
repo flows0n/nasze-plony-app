@@ -12,7 +12,7 @@ const StyledFooter = styled.div`
   font-size: 14px;
 
   @media (max-width: 800px) {
-    height: 40px;
+    height: 30px;
     font-size: 12px;
   }
 `;
