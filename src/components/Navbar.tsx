@@ -19,8 +19,8 @@ const StyledNavbar = styled.div<StyledNavbarProps>`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: fit-content;
-  transition: all 0.4s linear;
+  height: 160px;
+  transition: 0.3s linear;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
@@ -28,18 +28,18 @@ const StyledNavbar = styled.div<StyledNavbarProps>`
 
   h1 {
     font-size: 45px;
-    transition: all 0.4s linear;
+    transition: 0.3s linear;
   }
 
   img {
     width: 100px;
-    transition: all 0.4s linear;
+    transition: 0.3s linear;
   }
 
   ${(props) =>
     props.scrolled &&
     css`
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.6);
       color: rgba(255, 255, 255, 1);
       height: 60px;
       flex-direction: row;

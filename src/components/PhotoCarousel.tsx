@@ -19,7 +19,7 @@ const PhotoContainer = styled.div`
   @media (max-width: 600px) {
     height: 200px;
   }
-  background-color: rgba(211, 211, 211, 1);
+  background-color: rgba(0, 0, 0, 0.3);
 `;
 const PhotoCarousel = ({ photos }: PhotoCarouselProps) => {
   return (

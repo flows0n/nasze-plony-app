@@ -10,8 +10,19 @@ const StyledContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 85%;
-  gap: 20px;
+  align-items: center;
+  margin: auto;
+  gap: 5px;
+
+  max-width: 60%;
+  @media (max-width: 1200px) {
+    max-width: 80%;
+  }
+  @media (max-width: 800px) {
+    max-width: 100%;
+  }
+  min-width: min-content;
+  margin-bottom: 20px;
 `;
 
 const CardsContainer = ({ children }: CardsContainerProps) => {

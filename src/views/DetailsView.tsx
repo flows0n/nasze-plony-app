@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import PhotoCarousel from '../components/PhotoCarousel';
 import { FiPhoneCall, FiMail } from 'react-icons/fi';
 import { contact, photoGallery, description } from '../data/Constants';
+import Button from '../components/Button';
+import { FiArrowLeft } from 'react-icons/fi';
 
 export type IDetails = {
   id: number;
@@ -17,7 +19,7 @@ export type IDetails = {
 };
 
 const StyledContainer = styled.div`
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 32px;
   color: black;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
@@ -101,9 +103,15 @@ const Link = styled.a`
 const DetailsView = () => {
   const location = useLocation();
   const details = location.state as IDetails;
+  const navigate = useNavigate();
+
+  const handleBackClick = (): void => {
+    navigate(-1);
+  };
 
   return (
     <StyledContainer>
+      <Button text="Powrót" onClick={handleBackClick} icon={<FiArrowLeft />} />
       <Title>{details.place}</Title>
       <Person>{details.person}</Person>
       <SubTitle>{description}</SubTitle>
