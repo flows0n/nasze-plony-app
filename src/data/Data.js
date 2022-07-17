@@ -25,7 +25,11 @@ export const data = [
       'Jesteśmy rodzinnym gospodarstwem położonym na Podlasiu we wsi Nowodworce. Siedziba gospodarstwa znajduje się przy ulicy Wasilkowskie 28, przy tej samej ulicy są też tunele e których prowadzimy uprawę. \nGłówny profil produkcji to produkcja pod osłonami.\nW ramach Rolniczego Handlu Detalicznego oferujemy sadzonki ziół, takie jak bazylia, oregano, tymianek czy klika odmian mięty.\nNasza oferta obejmuje też ogórek gruntowy który doskonale nadaje się do przetworów domowych takich jak sałatki czy kiszenie.\nRównolegle prowadzimy też produkcję sadzonek kwiatów balkonowych i rabatowych, zaczynając od wiosennych bratków kończąc na jesiennej chryzantemie.',
     phoneNumber: '+48668029092',
     email: 'kwiatowy.raj@wp.pl',
-    photos: []
+    photos: [
+      '/resources/sosnowski_photos/1.jpg',
+      '/resources/sosnowski_photos/2.jpg',
+      '/resources/sosnowski_photos/3.jpg'
+    ]
   },
   {
     id: 3,
@@ -50,7 +54,3 @@ export const data = [
     photos: []
   }
 ];
-
-export const pageTitle = 'Nasze Plony';
-
-export const footer = '© Designed by Bartosz Maliszewski - Nasze Plony 2022';

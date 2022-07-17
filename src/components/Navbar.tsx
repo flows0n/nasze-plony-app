@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { pageTitle } from '../data/Data';
+import { pageTitle } from '../data/Constants';
 
 type NavbarProps = {
   children?: React.ReactNode;
@@ -41,7 +41,7 @@ const StyledNavbar = styled.div<StyledNavbarProps>`
     css`
       background-color: rgba(0, 0, 0, 0.7);
       color: rgba(255, 255, 255, 1);
-      height: 80px;
+      height: 60px;
       flex-direction: row;
       h1 {
         font-size: 20px;
@@ -57,7 +57,7 @@ const Navbar = ({ children }: NavbarProps) => {
   const [isScrolled, setIsScrolled] = React.useState(false);
 
   const changeColor = (): void => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 30) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);

@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import PhotoCarousel from '../components/PhotoCarousel';
 import { FiPhoneCall, FiMail } from 'react-icons/fi';
+import { contact, photoGallery, description } from '../data/Constants';
 
 export type IDetails = {
   id: number;
@@ -22,18 +23,48 @@ const StyledContainer = styled.div`
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
   margin: 180px 0 20px;
   max-width: 60%;
-  min-width: 300px;
   height: fit-content;
-  padding: 24px 40px;
+  padding: 40px 30px 30px;
+
+  @media (max-width: 1200px) {
+    padding: 30px 20px 20px;
+    max-width: 80%;
+  }
+  @media (max-width: 800px) {
+    padding: 20px 10px 10px;
+    max-width: 100%;
+  }
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  min-width: min-content;
 `;
 
-const Title = styled.h1``;
-const SubTitle = styled.h3``;
-const Description = styled.p``;
+const Title = styled.h1`
+  align-self: center;
+  text-align: center;
+`;
+const Person = styled.h3`
+  font-weight: 400;
+  align-self: center;
+  text-align: center;
+`;
+const SubTitle = styled.h3`
+  @media (max-width: 600px) {
+    margin: 10px 0px;
+  }
+  margin: 10px 0 10px 30px;
+  font-style: italic;
+`;
+
+const Description = styled.p`
+  align-self: center;
+  text-align: justify;
+  width: 90%;
+  @media (max-width: 600px) {
+    width: 95%;
+  }
+`;
 
 const LinksSection = styled.div`
   display: flex;
@@ -74,8 +105,10 @@ const DetailsView = () => {
   return (
     <StyledContainer>
       <Title>{details.place}</Title>
-      <SubTitle>{details.person}</SubTitle>
+      <Person>{details.person}</Person>
+      <SubTitle>{description}</SubTitle>
       <Description>{details.description}</Description>
+      <SubTitle>{contact}</SubTitle>
       <LinksSection>
         <Link href={`tel:${details.phoneNumber}`}>
           <FiPhoneCall /> {details.phoneNumber}
@@ -84,6 +117,7 @@ const DetailsView = () => {
           <FiMail /> {details.email}
         </Link>
       </LinksSection>
+      <SubTitle>{photoGallery}</SubTitle>
       <PhotoCarousel photos={details.photos} />
     </StyledContainer>
   );
