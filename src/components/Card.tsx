@@ -12,8 +12,8 @@ const StyledCard = styled.div`
   color: rgba(0, 0, 0, 1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   padding: 5px;
   flex-flow: column nowrap;
   align-items: center;
