@@ -1,3 +1,11 @@
+export const mainInfo = [
+  'Tytuł projektu: “Konsorcjum na rzecz, tworzenia krótkich łańcuchów dostaw oraz rozwoju małych gospodarstw rolnych i przedsiębiorstw”.',
+  'Projekt finansowany przez: Europejski Fundusz Rolny na rzecz Rozwoju Obszarów Wiejskich PROW 2014 – 2020 Działanie 16 „Współpraca” w przedmiocie operacji: tworzenie krótkich łańcuchów dostaw na zasadach płatności zryczałtowanej',
+  'Wartość projektu 325 000,00 zł Środki EFRROW 206797,50 zł co stanowi 63,63% przyznanej pomocy.',
+  'Krajowe środki publiczne 118202,50zł co stanowi 36,37% przyznanej pomocy.',
+  'Okres realizacji operacji – 19.01.2022 r. do 31.12.2022 r.'
+];
+
 export const data = [
   {
     id: 1,

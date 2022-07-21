@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Card from '../components/Card';
 import CardsContainer from '../components/CardsContainer';
 import Container from '../components/Container';
-import { data } from '../data/Data';
+import { data, mainInfo } from '../data/Data';
 
 const LogosSection = styled.div`
   width: 100%;
@@ -39,28 +39,20 @@ const MainView = () => {
           <Logo src="/resources/logos/prow.jpg" alt="PROW Logo" />
         </LogosSection>
         <Description>
-          Tytuł projektu: “Konsorcjum na rzecz, tworzenia krótkich łańcuchów
-          dostaw oraz rozwoju małych gospodarstw rolnych i przedsiębiorstw”.
+          {mainInfo[0]}
           <br />
           <br />
-          Projekt finansowany przez: Europejski Fundusz Rolny na rzecz Rozwoju
-          Obszarów Wiejskich PROW 2014 – 2020 Działanie 16 „Współpraca” w
-          przedmiocie operacji: tworzenie krótkich łańcuchów dostaw na zasadach
-          płatności zryczałtowanej.
+          {mainInfo[1]}
           <br />
           <br />
           <b>
-            Wartość projektu 325 000,00 zł Środki EFRROW 206797,50 zł co stanowi
-            63,63% przyznanej pomocy.
-          </b>
-          <br />
-          <b>
-            Krajowe środki publiczne 118202,50zł co stanowi 36,37% przyznanej
-            pomocy.
+            {mainInfo[2]}
+            <br />
+            {mainInfo[3]}
           </b>
           <br />
           <br />
-          Okres realizacji operacji – 19.01.2022 r. do 31.12.2022 r.
+          {mainInfo[4]}
         </Description>
       </Container>
       <>

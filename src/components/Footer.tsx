@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import { footer } from '../data/Constants';
 
-const StyledFooter = styled.div`
+type StyledFooterProps = {
+  children?: React.ReactNode;
+};
+
+const StyledFooter = styled.div<StyledFooterProps>`
   margin-top: auto;
   height: 40px;
   align-items: center;
@@ -18,7 +22,14 @@ const StyledFooter = styled.div`
 `;
 
 const Footer = () => {
-  return <StyledFooter>{footer}</StyledFooter>;
+  const today = new Date();
+  const actualYear = today.getFullYear();
+  return (
+    <StyledFooter>
+      {footer}
+      {actualYear}
+    </StyledFooter>
+  );
 };
 
 export default Footer;

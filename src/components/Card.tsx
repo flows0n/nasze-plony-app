@@ -12,9 +12,9 @@ const StyledCard = styled.div`
   color: rgba(0, 0, 0, 1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
-  width: 350px;
-  height: 350px;
-  padding: 5px;
+  width: 320px;
+  height: 320px;
+  padding: 16px;
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { pageTitle } from '../data/Constants';
+import { ReactComponent as Logo } from '../data/temp.svg';
 
 type NavbarProps = {
   children?: React.ReactNode;
@@ -28,10 +29,10 @@ const StyledNavbar = styled.div<StyledNavbarProps>`
 
   h1 {
     font-size: 45px;
-    transition: 0.3s linear;
+    transition: 0.1s linear;
   }
 
-  img {
+  svg {
     width: 100px;
     transition: 0.3s linear;
   }
@@ -46,9 +47,10 @@ const StyledNavbar = styled.div<StyledNavbarProps>`
       h1 {
         font-size: 20px;
       }
-      img {
+      svg {
         width: 50px;
-        margin: 0;
+        margin-right: 10px;
+        fill: rgba(255, 255, 255, 1);
       }
     `}
 `;
@@ -67,7 +69,7 @@ const Navbar = ({ children }: NavbarProps) => {
   window.addEventListener('scroll', changeColor);
   return (
     <StyledNavbar scrolled={isScrolled}>
-      <img src="/resources/temp.svg" />
+      <Logo />
       <h1>{pageTitle}</h1>
       {children}
     </StyledNavbar>

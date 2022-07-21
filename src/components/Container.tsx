@@ -13,16 +13,17 @@ const StyledContainer = styled.div`
   margin: 180px 0 20px;
   max-width: 60%;
   height: fit-content;
-  padding: 40px 30px 30px;
+  padding: 32px;
 
   @media (max-width: 1200px) {
-    padding: 30px 20px 20px;
+    border-radius: 16px;
     max-width: 80%;
   }
   @media (max-width: 800px) {
-    padding: 20px 10px 10px;
+    border-radius: 0px;
     max-width: 100%;
   }
+
   display: flex;
   flex-direction: column;
   justify-content: center;

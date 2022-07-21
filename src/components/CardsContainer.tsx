@@ -12,7 +12,7 @@ const StyledContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: auto;
-  gap: 15px;
+  gap: 32px;
 
   max-width: 60%;
   @media (max-width: 1200px) {
