@@ -73,9 +73,9 @@ const Link = styled.a`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   font-size: 18px;
   background-color: rgba(255, 255, 255, 1);
-  cursor: pointer;
-
   transition: 0.2s linear;
+  cursor: default;
+
   :hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);

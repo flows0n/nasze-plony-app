@@ -28,10 +28,7 @@ const StyledNavbar = styled.div<StyledNavbarProps>`
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
   color: rgba(0, 0, 0, 1);
-  :hover {
-    cursor: pointer;
-  }
-
+  cursor: default;
   h1 {
     font-size: 45px;
     transition: 0.1s linear;
