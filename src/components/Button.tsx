@@ -9,14 +9,13 @@ type ButtonProps = {
 
 const StyledButton = styled.button`
   all: unset;
-  margin: 0 5px 5px;
   width: fit-content;
   display: flex;
   flex-flow: row nowrap;
   gap: 10px;
   justify-content: center;
   align-items: center;
-  padding: 8px 16px;
+  padding: 12px;
   border-radius: 18px;
   font-size: 18px;
   font-weight: 500;
@@ -25,14 +24,17 @@ const StyledButton = styled.button`
   transition: 0.1s linear;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: 0.2s linear;
 
   :hover {
     background-color: rgb(255, 225, 181);
-    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
   }
   :active {
     background-color: rgb(255, 250, 181);
-    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
   }
 `;
 

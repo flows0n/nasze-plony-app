@@ -25,6 +25,7 @@ const StyledNavbar = styled.div<StyledNavbarProps>`
   transition: 0.3s linear;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0);
   color: rgba(0, 0, 0, 1);
   :hover {

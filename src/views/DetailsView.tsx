@@ -19,20 +19,28 @@ export type IDetails = {
   photos: string[];
 };
 
-const Title = styled.h1`
-  align-self: center;
+const HeaderContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  align-items: center;
+`;
+
+const TitleContainer = styled.div`
+  grid-column: 2;
   text-align: center;
 `;
+
+const ButtonContainer = styled.div`
+  grid-column: 1;
+`;
+
 const Person = styled.h3`
   font-weight: 400;
-  align-self: center;
-  text-align: center;
 `;
+
 const SubTitle = styled.h3`
-  @media (max-width: 600px) {
-    margin: 10px 0px;
-  }
-  margin: 10px 0 10px 30px;
+  margin: 10px 0;
+
   font-style: italic;
 `;
 
@@ -88,9 +96,18 @@ const DetailsView = () => {
 
   return (
     <Container>
-      <Button onClick={handleBackClick} icon={<FiArrowLeft size="1.5em" />} />
-      <Title>{details.place}</Title>
-      <Person>{details.person}</Person>
+      <HeaderContainer>
+        <ButtonContainer>
+          <Button
+            onClick={handleBackClick}
+            icon={<FiArrowLeft size="1.5em" />}
+          />
+        </ButtonContainer>
+        <TitleContainer>
+          <h1>{details.place}</h1>
+          <Person>{details.person}</Person>
+        </TitleContainer>
+      </HeaderContainer>
       <SubTitle>{description}</SubTitle>
       <Description>{details.description}</Description>
       <SubTitle>{contact}</SubTitle>
