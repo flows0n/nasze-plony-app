@@ -17,7 +17,7 @@ const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
   padding: 8px 16px;
-  border-radius: 12px;
+  border-radius: 18px;
   font-size: 18px;
   font-weight: 500;
   background-color: rgb(255, 233, 181);
@@ -28,9 +28,11 @@ const StyledButton = styled.button`
 
   :hover {
     background-color: rgb(255, 225, 181);
+    cursor: pointer;
   }
   :active {
     background-color: rgb(255, 250, 181);
+    cursor: pointer;
   }
 `;
 

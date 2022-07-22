@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import PhotoCarousel from '../components/PhotoCarousel';
 import { FiPhoneCall, FiMail } from 'react-icons/fi';
 import { contact, photoGallery, description } from '../data/Constants';
-import Button from '../components/Button';
 import { FiArrowLeft } from 'react-icons/fi';
 import Container from '../components/Container';
+import Button from '../components/Button';
 
 export type IDetails = {
   id: number;
@@ -61,7 +61,7 @@ const Link = styled.a`
   justify-content: space-between;
   align-items: center;
   padding: 8px 16px;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   font-size: 18px;
   background-color: rgba(255, 255, 255, 1);
@@ -88,7 +88,7 @@ const DetailsView = () => {
 
   return (
     <Container>
-      <Button text="Powrót" onClick={handleBackClick} icon={<FiArrowLeft />} />
+      <Button onClick={handleBackClick} icon={<FiArrowLeft size="1.5em" />} />
       <Title>{details.place}</Title>
       <Person>{details.person}</Person>
       <SubTitle>{description}</SubTitle>

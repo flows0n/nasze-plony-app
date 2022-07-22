@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import { pageTitle } from '../data/Constants';
 import { ReactComponent as Logo } from '../data/temp.svg';
@@ -26,6 +27,9 @@ const StyledNavbar = styled.div<StyledNavbarProps>`
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
   color: rgba(0, 0, 0, 1);
+  :hover {
+    cursor: pointer;
+  }
 
   h1 {
     font-size: 45px;
@@ -57,6 +61,7 @@ const StyledNavbar = styled.div<StyledNavbarProps>`
 
 const Navbar = ({ children }: NavbarProps) => {
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const nav = useNavigate();
 
   const changeColor = (): void => {
     if (window.scrollY >= 30) {
@@ -68,10 +73,13 @@ const Navbar = ({ children }: NavbarProps) => {
 
   window.addEventListener('scroll', changeColor);
   return (
-    <StyledNavbar scrolled={isScrolled}>
+    <StyledNavbar
+      scrolled={isScrolled}
+      onClick={() => {
+        nav('/');
+      }}>
       <Logo />
       <h1>{pageTitle}</h1>
-      {children}
     </StyledNavbar>
   );
 };
