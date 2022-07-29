@@ -1,9 +1,9 @@
 export const mainInfo = [
-  'Tytuł projektu: “Konsorcjum na rzecz, tworzenia krótkich łańcuchów dostaw oraz rozwoju małych gospodarstw rolnych i przedsiębiorstw”.',
+  'Tytuł projektu: “Rolniczy handel detaliczny, przetwórstwo oraz sprzedaż surowców rolnych konsumentom finalnym, poprzez tworzenie krótkiego łańcucha dostaw”.',
   'Projekt finansowany przez: Europejski Fundusz Rolny na rzecz Rozwoju Obszarów Wiejskich PROW 2014 – 2020 Działanie 16 „Współpraca” w przedmiocie operacji: tworzenie krótkich łańcuchów dostaw na zasadach płatności zryczałtowanej',
   'Wartość projektu 325 000,00 zł Środki EFRROW 206797,50 zł co stanowi 63,63% przyznanej pomocy.',
   'Krajowe środki publiczne 118202,50zł co stanowi 36,37% przyznanej pomocy.',
-  'Okres realizacji operacji – 19.01.2022 r. do 31.12.2022 r.'
+  'Okres realizacji operacji – 06.07.2022 r. do 05.07.2023 r.'
 ];
 
 export const data = [
@@ -47,7 +47,7 @@ export const data = [
     description:
       'Gospodarstwo położone jest na terenie Podlasia w gminie Kuźnica we wsi Wojnowce. Pasieke liczącą 30 rodzin pszczelich prowadzę od 10 lat.\nPszczoły pracują z dala od miasta i przemysłu w naturalnym środowisku wśród łąk lasów i ogrodów.w mojej ofercie posiadam miód propolis pyłek pszczeli i wosk.\nPasieka zarejestrowana jest u lekarza weterynarii.\nZapraszam po nasze produkty. ',
     phoneNumber: '+48502938210',
-    email: 'email.pl',
+    email: 'violeta774@interia.pl',
     photos: []
   },
   {
@@ -57,8 +57,8 @@ export const data = [
     place: 'Gospodarstwo rolne we wsi Kolonia Mostowlany',
     description:
       'Gospodarstwo rolne we wsi Kolonia Mostowlany znajduje się na terenach położonych wśród malowniczych pól i lasów. Gospodarstwo zajmuje się przydomową uprawą pomidorów  z których powstaje przecier pomidorowy idealny do zup i sosów. Pomidory dojrzewają w pełnym słońcu na terenach czystych ekologicznie z dala od cywilizacji.',
-    phoneNumber: '+48',
-    email: 'email.pl',
+    phoneNumber: '+48505033332',
+    email: 'katarzynakozuchowska11@wp.pl',
     photos: []
   }
 ];
