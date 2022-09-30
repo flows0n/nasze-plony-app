@@ -12,9 +12,10 @@ export type IDetails = {
   id: number;
   logo: string;
   person: string;
+  link: string;
   place: string;
   description: string;
-  phoneNumber: string;
+  phoneNumbers: string[];
   email: string;
   photos: string[];
 };
@@ -112,9 +113,14 @@ const DetailsView = () => {
       <Description>{details.description}</Description>
       <SubTitle>{contact}</SubTitle>
       <LinksSection>
-        <Link href={`tel:${details.phoneNumber}`}>
-          <FiPhoneCall /> {details.phoneNumber}
-        </Link>
+        {details.phoneNumbers?.map((x, i) => {
+          return (
+            <Link key={i} href={`tel:${x}`}>
+              <FiPhoneCall /> {x}
+            </Link>
+          );
+        })}
+
         <Link href={`mailto:${details.email}`}>
           <FiMail /> {details.email}
         </Link>
@@ -125,7 +131,7 @@ const DetailsView = () => {
           <PhotoCarousel photos={details.photos} />
         </>
       ) : (
-        <></>
+        ''
       )}
     </Container>
   );

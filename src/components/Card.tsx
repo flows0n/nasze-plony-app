@@ -39,7 +39,7 @@ const Card = ({ details }: CardProps) => {
   const navigate = useNavigate();
 
   const handleClick = (): void => {
-    navigate(`/:${details.id}`, { state: details });
+    navigate(`/${details.link}`, { state: details });
   };
 
   return (

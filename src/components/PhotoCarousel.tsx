@@ -20,6 +20,13 @@ const PhotoContainer = styled.div`
     height: 200px;
   }
   background-color: rgba(0, 0, 0, 0.3);
+
+  img {
+    object-fit: scale-down;
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+  }
 `;
 const PhotoCarousel = ({ photos }: PhotoCarouselProps) => {
   return (
@@ -32,14 +39,7 @@ const PhotoCarousel = ({ photos }: PhotoCarouselProps) => {
         preventMovementUntilSwipeScrollTolerance>
         {photos.map((item, index) => (
           <PhotoContainer key={index}>
-            <img
-              src={item}
-              style={{
-                objectFit: 'scale-down',
-                maxWidth: '100%',
-                maxHeight: '100%'
-              }}
-            />
+            <img src={item} />
           </PhotoContainer>
         ))}
       </Carousel>

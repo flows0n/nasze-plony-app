@@ -6,13 +6,10 @@ import { ReactComponent as Logo } from '../data/temp.svg';
 
 type NavbarProps = {
   children?: React.ReactNode;
-};
-
-type StyledNavbarProps = {
   scrolled?: boolean;
 };
 
-const StyledNavbar = styled.div<StyledNavbarProps>`
+const StyledNavbar = styled.div<NavbarProps>`
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -78,6 +75,7 @@ const Navbar = ({ children }: NavbarProps) => {
       }}>
       <Logo />
       <h1>{pageTitle}</h1>
+      {children}
     </StyledNavbar>
   );
 };
