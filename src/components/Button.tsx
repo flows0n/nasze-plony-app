@@ -24,7 +24,8 @@ const StyledButton = styled.button`
   transition: 0.1s linear;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
-  cursor: default;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   transition: 0.2s linear;
 
   :hover {

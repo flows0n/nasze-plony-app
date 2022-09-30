@@ -75,7 +75,8 @@ const Link = styled.a`
   font-size: 18px;
   background-color: rgba(255, 255, 255, 1);
   transition: 0.2s linear;
-  cursor: default;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 
   :hover {
     transform: scale(1.05);

@@ -20,11 +20,11 @@ const StyledCard = styled.div`
   text-align: center;
   justify-content: center;
   transition: all 0.2s linear;
-  cursor: default;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   :hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-    cursor: default;
   }
   :active {
     background-color: #e7f6fe;
