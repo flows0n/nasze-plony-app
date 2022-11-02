@@ -39,7 +39,7 @@ const PhotoCarousel = ({ photos }: PhotoCarouselProps) => {
         preventMovementUntilSwipeScrollTolerance>
         {photos.map((item, index) => (
           <PhotoContainer key={index}>
-            <img src={item} />
+            <img src={item} loading="lazy" />
           </PhotoContainer>
         ))}
       </Carousel>

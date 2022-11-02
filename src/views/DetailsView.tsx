@@ -7,6 +7,7 @@ import { contact, photoGallery, description } from '../data/Constants';
 import { FiArrowLeft } from 'react-icons/fi';
 import Container from '../components/Container';
 import Button from '../components/Button';
+import { ReactImageGalleryItem } from 'react-image-gallery';
 
 export type IDetails = {
   id: number;

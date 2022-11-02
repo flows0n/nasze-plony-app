@@ -17,7 +17,14 @@ export const data = [
       'Gospodarstwo pszczelarskie „Patoka” Artur Konopko powstało w 2011roku  z pasji do pszczół i miłości do przyrody. Moje podopieczne zbierają nektar oraz pyłek kwiatowy z terenów „zielonych płuc polski”, z serca puszczy knyszyńskiej jak również z terenów rolniczych wokół Białegostoku. Wielopniowa pasieka pozwala na zbiór miodów o zróżnicowanych walorach smakowych które są rozstawione w terenie o różnorodnej szacie roślinnej. Głównym celem jest dostarczenie moim odbiorcom obecnym jak i przyszłym, miodów wielokwiatowych (uważam że te są najlepsze w bogactwie swojego smaku) jak również miodów odmianowych z rzepaku, gryki, lipy, maliny. W ofercie sprzedaży posiadm również pyłek kwiatowy, pierzgę oraz propolis i wosk pszczeli. Wszystkim swoim odbiorcom życzę samych słodkich i pysznych dni.',
     phoneNumbers: ['+48794611132', '+48609596677'],
     email: 'artbi968@gmail.com',
-    photos: []
+    photos: [
+      'https://i.imgur.com/tq1Qd99.jpg',
+      'https://i.imgur.com/ywwLU08.jpg',
+      'https://i.imgur.com/Gf6NDky.jpg',
+      'https://i.imgur.com/98tdwa6.jpg',
+      'https://i.imgur.com/CkBG0gW.jpg',
+      'https://i.imgur.com/gbzZPPG.jpg'
+    ]
   },
   {
     id: 2,
@@ -30,9 +37,9 @@ export const data = [
     phoneNumbers: ['+48791100461'],
     email: 'msosnowski71@wp.pl',
     photos: [
-      '/resources/sosnowski_photos/1.jpg',
-      '/resources/sosnowski_photos/2.jpg',
-      '/resources/sosnowski_photos/3.jpg'
+      'https://i.imgur.com/pnaL534.jpg',
+      'https://i.imgur.com/H0dvcNs.jpg',
+      'https://i.imgur.com/dR67K6G.jpg'
     ]
   },
   {
@@ -70,11 +77,11 @@ export const data = [
     phoneNumbers: ['+48603840638'],
     email: 'artur13.blaszczuk@gmail.com',
     photos: [
-      '/resources/blaszczuk_photos/1.jpg',
-      '/resources/blaszczuk_photos/2.jpg',
-      '/resources/blaszczuk_photos/3.jpg',
-      '/resources/blaszczuk_photos/4.jpg',
-      '/resources/blaszczuk_photos/5.jpg'
+      'https://i.imgur.com/ZCBR3Ts.jpg',
+      'https://i.imgur.com/qDsp0ge.jpg',
+      'https://i.imgur.com/WbqvAzG.jpg',
+      'https://i.imgur.com/IWQHvqQ.jpg',
+      'https://i.imgur.com/TvqkEDU.jpg'
     ]
   }
 ];
